@@ -1,40 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Restaurant POS — Point of Sale System for Restaurants (Next.js + Supabase)
+
+A modern **restaurant point-of-sale (POS) system** built with **Next.js 15**, **React 19**, and **Supabase**. Restaurant POS streamlines daily operations — order management, inventory tracking, QR-code table ordering, and printable PDF receipts — with real-time sales analytics in a fast, beautiful interface.
+
+## Features
+
+- **Order management** — create and manage restaurant orders from a purpose-built POS interface
+- **QR code ordering** — generate QR codes for tables and scan codes in-app (`qrcode`, `qrcode.react`, `@yudiel/react-qr-scanner`, jsQR)
+- **Inventory management** — keep track of stock alongside your orders and menu
+- **PDF receipts** — generate and print customer receipts with jsPDF
+- **Sales analytics** — visual dashboards and charts powered by Recharts
+- **Real-time backend** — data powered by Supabase for fast, reliable syncing
+- **Dark & light themes** — theme switching with next-themes, toast notifications, and a full shadcn/ui + Radix component set
+
+## Tech Stack
+
+- **Framework:** Next.js 15 + React 19
+- **Language:** JavaScript
+- **Backend:** Supabase
+- **Styling & UI:** Tailwind CSS, shadcn/ui, Radix UI, Framer Motion
+- **Extras:** QR code generation & scanning, jsPDF, Recharts, Lucide icons
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies and run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+> Create a Supabase project and add its URL and anon key to a `.env.local` file to connect the backend.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Other scripts:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+```bash
+npm run build   # production build
+npm run start   # serve the production build
+npm run lint    # run ESLint
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+⭐ If this POS system helps your restaurant or inspires your own build, consider giving it a star — contributions and feedback are welcome!
